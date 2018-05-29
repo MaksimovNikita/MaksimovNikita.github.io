@@ -1,4 +1,3 @@
-console.log('kdksakd');
 $.fn.animate_Text = function() {
   var string = this.text();
   return this.each(function(){
