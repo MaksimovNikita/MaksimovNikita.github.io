@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Планетарный тест</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class='overlay'></div>
+<div class='timer'>0 seconds</div>
+<div class='intro modal'>
+  <div class='intro modal_inner'>
+    <div class='intro modal_inner__close c_modal st'>
+      x
+    </div>
+    <div class='intro modal_inner__title'>
+      <h2>Планетарный тест</h2>
+    </div>
+    <div class='intro modal_inner__text'>
+      <p>Перемещайте планеты в том соответствии в котором вы думаете!</p>
+    </div>
+    <div class='intro modal_inner__image'>
+      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/sdfsdfsdf.gif'>
+    </div>
+    <div class='intro modal_inner__cta c_modal'>
+      <button class='st'>Поехали!</button>
+    </div>
+  </div>
+</div>
+<div class='winner modal'>
+  <div class='winner modal_inner'>
+    <div class='winner modal_inner__title'>
+      <h2>
+        Молодец, ты победил за
+        <span class='t'>10.00</span>
+      </h2>
+    </div>
+    <div class='winner modal_inner__text'>
+      <p>Вы ответили правильно! Можете поделиться со своими друзьями результатом, и посмотреть на что способны они!</p>
+    </div>
+    <div class='winner modal_inner__cta'>
+      <button class='fb'>
+        Поделиться Вконтакте
+      </button>
+    </div>
+    <div class='winner modal_inner__restart'>
+    </div>
+  </div>
+</div>
+<div class='planets'>
+  <div class='planets_stars'></div>
+  <div class='planets_container'>
+    <div class='planets_container__title'>
+      <h1>Планетарный тест</h1>
+    </div>
+    <div class='planets_container__title'>
+      <h3>Перемещайте планеты в том соответствии в котором вы думаете!</h3>
+    </div>
+    <div class='planets_container__planets'>
+      <div class='planet_wrap'>
+        <div class='planet' data-planet='venus'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_venus.png'>
+        </div>
+        <span>Венера</span>
+      </div>
+      <div class='planet_wrap'>
+        <div class='planet' data-planet='earth'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_earth.png'>
+        </div>
+        <span>Земля</span>
+      </div>
+      <div class='planet_wrap'>
+        <div class='planet' data-planet='saturn'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_saturn.png'>
+        </div>
+        <span>Сатурн</span>
+      </div>
+      <div class='planet_wrap'>
+        <div class='planet' data-planet='neptune'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_neptune.png'>
+        </div>
+        <span>Нептун</span>
+      </div>
+      <div class='planet_wrap'>
+        <div class='planet' data-planet='mercury'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_mercury.png'>
+        </div>
+        <span>Меркурий</span>
+      </div>
+      <div class='planet_wrap'>
+        <div class='planet' data-planet='mars'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_mars.png'>
+        </div>
+        <span>Марс</span>
+      </div>
+      <div class='planet_wrap'>
+        <div class='planet' data-planet='jupiter'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_jupiter.png'>
+        </div>
+        <span>Юпитер</span>
+      </div>
+      <div class='planet_wrap'>
+        <div class='planet' data-planet='uranus'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_uranus.png'>
+        </div>
+        <span>Уран</span>
+      </div>
+    </div>
+    <div class='planets_container__quiz'>
+      <div class='planet_holder sun null' data-planet='sun'>
+        <span>?</span>
+        <div class='planet_answer'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_sun.png'>
+        </div>
+      </div>
+      <div class='planet_holder mercury' data-planet='mercury'>
+        <span>?</span>
+        <div class='planet_answer'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_mercury.png'>
+        </div>
+      </div>
+      <div class='planet_holder venus' data-planet='venus'>
+        <span>?</span>
+        <div class='planet_answer'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_venus.png'>
+        </div>
+      </div>
+      <div class='planet_holder earth' data-planet='earth'>
+        <span>?</span>
+        <div class='planet_answer'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_earth.png'>
+        </div>
+      </div>
+      <div class='planet_holder mars' data-planet='mars'>
+        <span>?</span>
+        <div class='planet_answer'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_mars.png'>
+        </div>
+      </div>
+      <div class='planet_holder jupiter' data-planet='jupiter'>
+        <span>?</span>
+        <div class='planet_answer'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_jupiter.png'>
+        </div>
+      </div>
+      <div class='planet_holder saturn' data-planet='saturn'>
+        <span>?</span>
+        <div class='planet_answer'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_saturn.png'>
+        </div>
+      </div>
+      <div class='planet_holder uranus' data-planet='uranus'>
+        <span>?</span>
+        <div class='planet_answer'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_uranus.png'>
+        </div>
+      </div>
+      <div class='planet_holder neptune' data-planet='neptune'>
+        <span>?</span>
+        <div class='planet_answer'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pq_neptune.png'>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

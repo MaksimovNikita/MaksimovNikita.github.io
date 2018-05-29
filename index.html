@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+	<meta charset="UTF-8">
+	<title>Электронное пособие по астрономии</title>
+    <link rel="stylesheet" href="css/style.css">
+	<style>
+
+		.menu ul {
+		  margin: 0;
+		  list-style: none;
+		  padding-left: 10px;
+		  display: none;
+		}
+
+		.menu .title {
+
+		  font-size: 18px;
+		  cursor: pointer;
+		}
+
+		.menu .title::before {
+		  color: green;
+		}
+
+		.menu.open .title::before {
+		}
+
+		.menu.open ul {
+		  display: block;
+		}
+		
+	
+	</style>
+</head>
+
+<body>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <h1 class="page_title">Электронное пособие по астрономии</h1>
+	<h4 class="what_to_do">(Выберите раздел из меню)</h4>
+<div class="side_menu">
+	<div class="burger_box">
+		<div class="menu-icon-container">
+			<a href="#" class="menu-icon js-menu_toggle closed">
+				<span class="menu-icon_box">
+					<span class="menu-icon_line menu-icon_line--1"></span>
+					<span class="menu-icon_line menu-icon_line--2"></span>
+					<span class="menu-icon_line menu-icon_line--3"></span>
+				</span>
+			</a>
+		</div>
+	</div>
+	<div id ="list" class="menu">
+		<h2 class="menu_title">Главное меню</h2>
+		<ul class="list_load">
+			<li class="list_item"><a href="../Diplom/Theory/index.html">Теория</a></li>
+			<li class="list_item"><a href="../Diplom/Solar_System/index.html">Солнечная система</a> </li>
+			<li class="list_item"><a href="../Diplom/mobile-planet-gallery/index.html">О планетах</a></li>
+			<div class="list_item" id ="list" class="menu">			
+				<span class="title">Тесты</span>
+				<ul>
+					<li class="list_item"><a href="../Diplom/Planets-Quiz/index.html">Тест 1</a></li>
+					<li class="list_item"><a href="../Diplom/Space-Quiz/index.html">Тест 2</a></li>
+				</ul>
+			</div>
+			<li class="list_item"><a href="../Diplom/Story/index.html"">История</a></li>
+			<li class="list_item"><a href="../Diplom/Game/index.html">Игра</a></li>
+		</ul>
+	</div>
+
+</div>
+
+
+	<script>
+		var menuElem = document.getElementById('list');
+		var titleElem = menuElem.querySelector('.title');
+
+		titleElem.onclick = function() {
+		  menuElem.classList.toggle('open');
+		};
+    </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+</body>
+
+</html>
