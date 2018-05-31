@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" class="theory_page_background">
 <link rel="stylesheet" href="css/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(window).scroll(function() {
+			if($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut(); 
+			}
+		}); 
+		$('#toTop').click(function() { 
+			$('body,html').animate({scrollTop:0},800);
+		}); 
+	});
+</script>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Теория</title>
 </head>
+<div ID="toTop">Наверх</div >
 <body>
 	<div class="theory_page_content">
 		<h1 class="title">§ 1. Предмет астрономии</h1>
@@ -123,6 +139,5 @@
 											<button class="next_page" onclick="">Следующая страница</button>
 											</div>
 										</body>
-										<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 										<script type="text/javascript" src="js/index.js"></script>
 										</html>
