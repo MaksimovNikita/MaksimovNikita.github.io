@@ -20,7 +20,24 @@
 	padding-right: 30px;
 	padding-top: 10px;
 	margin-bottom: 10px;
-    padding-bottom: 22px;
+	padding-bottom: 22px;
+}
+.list{
+	color:white;
+	text-align: center;
+	font-family: "Roboto",Arial,sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+.listitem{
+	color:white;
+	text-align: center;
+	
+}
+.allotted{
+	color:#6ba5ff;
+	font-weight: 700;
 }
 .theory_page_content{
 	width: 900px;
@@ -31,7 +48,7 @@
 	font-size: 21px;
 	line-height: 30px;
 	margin-bottom: 23px;
-	opacity: 1;
+	opacity: 0.9;
 }
 .theory_page_content-wrapper {
 	background-color: #000000d4;
@@ -76,10 +93,10 @@
 }
 }
 .next_page_hover{
-background-color: #ff3434;
+	background-color: #ff3434;
 }
 #example .new { opacity: 0; }
 #example .div_opacity {
-  transition: opacity .5s ease-in-out;
-  opacity: 1;
+	transition: opacity .5s ease-in-out;
+	opacity: 1;
 }
