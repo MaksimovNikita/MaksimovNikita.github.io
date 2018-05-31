@@ -103,8 +103,48 @@
 .next_page_hover{
 	background-color: #ff3434;
 }
+
 #example .new { opacity: 0; }
 #example .div_opacity {
 	transition: opacity .5s ease-in-out;
 	opacity: 1;
 }
+.prev_page{
+	background-color: #e7e7e7; color: black; /* Green */
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 19px;
+	margin: 4px 2px;
+	cursor: pointer;
+	outline: none;
+	border-radius: 8px;
+	opacity: 0.9; 
+	position: relative;
+}
+.prev_page::before,
+.prev_page::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: black;
+	top:0;
+	right:100%;
+	opacity: .1;
+	transition: .3s;
+	z-index: -1;
+}
+.prev_page:hover{
+	color:white;
+}
+.prev_page:hover::before,
+.prev_page:hover::after{
+	right:0;
+}
+}
+.prev_page_hover{
+	background-color: #ff3434;
