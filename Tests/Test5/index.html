@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Космический тест</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  		
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id = "header-container"></div>
+<div id = "main-container">
+<h1> Календарь и время </h1>
+<form id = "form1">
+<fieldset>
+<h2> Средние солнечные сутки…</h2>
+<label><input type="radio" name="acronym" value="0" />на 3 мин 56 с длиннее звездных суток</label>
+<label><input type="radio" name="acronym" value="2" />на 3 мин 56 с короче звездных суток</label>
+<label><input type="radio" name="acronym" value="0" />на 4 мин короче звездных суток</label>
+<label><input type="radio" name="acronym" value="0" />на 4 мин длиннее звездных суток</label>
+<label><input type="radio" name="acronym" value="0" />продолжительность солнечных и звездных суток одинакова</label>
+<h2> При пересечении линии перемены даты с запада на восток… </h2>
+<label><input type="radio" name="abelt" value="0" />календарное число уменьшается на две единицы</label>
+<label><input type="radio" name="abelt" value="0" />календарное число уменьшается на две единицы</label>
+<label><input type="radio" name="abelt" value="0" />календарное число не изменяется</label>
+<label><input type="radio" name="abelt" value="2" />календарное число уменьшается на единицу</label>
+<label><input type="radio" name="abelt" value="0" />календарное число увеличивается на единицу</label>
+<h2> Географическая долгота места наблюдения равна … (сколько?), если в местный полдень путешественник отметил 14 ч 13 мин по гринвичскому времени.</h2>
+<label><input type="radio" name="moon" value="2" />2 ч 13 мин з. д.</label>
+<label><input type="radio" name="moon" value="0" />2 ч 13 мин в. д.</label>
+<label><input type="radio" name="moon" value="0" />5 ч 35 мин з. д.</label>
+<label><input type="radio" name="moon" value="0" />5 ч 35 мин в. д.</label>
+<label><input type="radio" name="moon" value="0" />2 ч 13 мин 42 с в. д.</label>
+<h2> Путешественники заметили, что по местному времени затмение Луны состоялось в 5 ч 15 мин, тогда как по астрономическому календарю оно должно было состояться в 3 ч 51 мин по гринвичскому времени. Какова долгота их места нахождения? </h2>
+<label><input type="radio" name="rover" value="0" />2 ч 16 мин з. д.</label>
+<label><input type="radio" name="rover" value="0" />2 ч 38 мин в. д.</label>
+<label><input type="radio" name="rover" value="0" />2 ч 16 мин в. д.</label>
+<label><input type="radio" name="rover" value="0" />2 ч 38 мин з. д.</label>
+<label><input type="radio" name="rover" value="2" />1 ч 21 мин в. д.</label>
+<h2> Если А. С. Пушкин родился в Москве 26 мая 1799 года по старому стилю, то по новому стилю его день рождения следует отмечать… </h2>
+<label><input type="radio" name="abelt" value="0" />5 июня</label>
+<label><input type="radio" name="abelt" value="0" />15 мая</label>
+<label><input type="radio" name="abelt" value="4" />6 июня</label>
+<label><input type="radio" name="abelt" value="0" />12 мая</label>
+<label><input type="radio" name="abelt" value="0" />7 июня</label>
+<br>
+<button class = "btn btn-default" type="submit" value="Submit">Подтвердить</button>
+</fieldset>
+</form>
+<p>Твои очки: <span id="grade">__</span></p>
+<p id="grade2"></p>
+<br>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
